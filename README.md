@@ -25,21 +25,27 @@ The enclosed files in the submission package are as follows:
    - Calculates the 5 parity bits (P1-P5) for an 8-bit data input.
    - Outputs a 13-bit vector consisting of the data bits and parity bits.
    - This file should be loaded first to test the ECC generation.
+   - ![Alt text](ECC3.png?raw=true "Optional Title")
 
 4. **13-bit Data Transmission.cct** - The circuit file for Part 2:
    - Simulates the transmission of the 13-bit data vector.
    - Allows the user to introduce errors using switches (E1-E13) to flip bits in the transmitted data.
    - Outputs the modified 13-bit vector, which is used as input for the ECC Detector.
+   - ![Alt text](13-bit%20Data%20Transmission.png?raw=true "Optional Title") 
 
 5. **Part 3.cct** - The circuit file for Part 3:
    - Detects and corrects single-bit errors using Hamming Code.
    - Displays the corrected data and indicates the error status (0 for no error, C for single-bit correction, E for multiple-bit errors).
    - Outputs the corrected 8-bit data and the error status.
+   - ![Alt text](Decoder.png?raw=true "Optional Title")
+     
+   - ![Alt text](Main%20Memory.png?raw=true "Optional Title") 
 
 6. **Main.cct** - The integrated circuit file:
    - Connects the ECC Generator, Data Transmission Bus, and ECC Detector together.
    - Allows for end-to-end testing of the ECC system.
    - Displays the final output data on two hexadecimal displays and the error status on a third hexadecimal display.
+   - ![Alt text](Main%20Circuit.png?raw=true "Optional Title")
 
 ## Usage Instructions
 1. Load the **Main.cct** file in LogicWorks.
